@@ -32,10 +32,8 @@ export default function Main() {
                 }}
             />
             <View style={styles.containerform}>
-                <Text style={styles.title}>Login</Text>
+                <Text style={styles.title}>Login FORM</Text>
                 <Text style={{ marginBottom: 9 }}>Usuario</Text>
-                {/*xd
-                */ }
                 <TextInput
                     style={styles.input}
                     placeholder="Email"
@@ -60,7 +58,7 @@ export default function Main() {
                             },
                             styles.forgotPassword,
                         ]}>
-                        Forgot Password?
+                        No recuerdas tu contraseña?
 
                     </Text>
                 </Pressable>
