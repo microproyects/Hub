@@ -37,7 +37,7 @@ export default function Main() {
                 {/*Una vez acabes vas a abrir esto se llama git bash puedes abrirlo desde la carpeta para subir los cambios tienes 2 opciones subir literalmente todo que es con
                 git add . eso sube todo y otra es especificacndo el archivo
                 git add Main.jsx y subira los cambios de ese archivo una vez ya hagas eso
-                haces
+                haces un commit git commit -m "Cambie las palabras de ingles por español    " y aca especificas maso lo q cambiaste ahora para subir los cambios pones git push origin 0.2v , siempre 0.2v ¿Por qué? por que es la version 0.2v que sacamos la 0.1v era una mrd xdxd esta es la 0.2v y la que sacaremos luego sera la 1.0v, puedes copiar ese enlace o no pero si lo copias es "mas facil pegas eso en opera  y sera un tipo clon de mi repositorio para ver que cambios has hecho pero para hacer una pull request que significa como una peticion al creador de la aplicacion para que vea mis cambios mis mejoras mis recomendaciones y los accepte y si los accepte eso se incorporara al codigo original de la aplicacion eso se llama pull request, como se hace? vas al directorio de microproyects/hub te diriges a 0.2v" y te aparecera eso del create pull request y ahí le dasy aqui si escribes que cambios has hecho por que no soy mago para divinar xdxdxd osea si puedo ver que cambios hiciste en el codigo pero debes decir por que muy resumido pero debe ser entendible eso ignoralo ya luego lo corrigo pero una vez hagas eso ya estara subido y yo podre ver desde mi página xxd y abajo puedes ver los cambios 
                 */ }
                 <TextInput
                     style={styles.input}
