@@ -38,10 +38,7 @@ function Landing () {
                         <Text>HOLA XD</Text>
                         <Upload />
                     </Pressable>
-                    <Pressable>
-                        <Text>HOLA XD22222</Text>
-                        <Upload />
-                    </Pressable>
+                {/*XD , veras ponte tu estas modificando supongamos "creando el login" */ }
                 </Link>
             </View>
         </View>

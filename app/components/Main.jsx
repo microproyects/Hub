@@ -33,7 +33,9 @@ export default function Main() {
             />
             <View style={styles.containerform}>
                 <Text style={styles.title}>Login</Text>
-                <Text style={{ marginBottom: 9 }}>Username</Text>
+                <Text style={{ marginBottom: 9 }}>Usuario</Text>
+                {/*
+                asdasdasdasdasxdasxdasxdasdxasdxadxasdxasdxasdx*/ }
                 <TextInput
                     style={styles.input}
                     placeholder="Email"
@@ -42,7 +44,7 @@ export default function Main() {
                     keyboardType="email-address"
                     autoCapitalize="none"
                 />
-                <Text style={{ marginBottom: 9 }}>Password</Text>
+                <Text style={{ marginBottom: 9 }}>Contraseña</Text>
                 <TextInput
                     style={styles.input}
                     placeholder="Password"
