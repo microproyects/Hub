@@ -5,7 +5,7 @@ import { View } from "react-native";
 
 export default function Layout() {
     return (
-        <View style={{backgroundColor: '#8A7AF7'}}>
+        <View style={{backgroundColor: '#8A7AE7'}}>
             <StatusBar style="light" />
             <Slot />
         </View>

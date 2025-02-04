@@ -1,7 +1,7 @@
 import React from 'react';
 import Landing from './components/Landing';
 
-export default function About() {
+export default function Home() {
     return (
         <Landing />
     );
