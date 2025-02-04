@@ -38,6 +38,7 @@ function Landing () {
                         <Text>HOLA XD</Text>
                         <Upload />
                     </Pressable>
+                {/*Cuando acabes de modificar algo ya sea lo guardes osea Control + S te aparece ahí que has hecho un cambio y en donde tambien te aparece y ahí donde dice mensaje describes muy resumido que modificaste y le das a la flechita y hacer commit e insertar*/ }
                 </Link>
             </View>
         </View>
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30,
         margin: 8,
-        padding: 3,
+        padding: 4,
         borderRadius: 50,
     },
 
