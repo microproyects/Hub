@@ -35,7 +35,7 @@ function Landing () {
             <View style={{ backgroundColor: 'rgba(132, 0, 255, 0.99)', paddingHorizontal: 6, padding: 6, borderRadius: 6, position: 'absolute', bottom: 16, right: 26 }}>
                 <Link href="#">
                     <Pressable>
-                        <Text>HOLA</Text>
+                        <Text>HOLA XD</Text>
                         <Upload />
                     </Pressable>
                 </Link>
