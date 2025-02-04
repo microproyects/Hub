@@ -59,7 +59,7 @@ export default function Main() {
                             },
                             styles.forgotPassword,
                         ]}>
-                        Forgot Password?
+                        No recuerdas tu contraseña?
 
                     </Text>
                 </Pressable>
