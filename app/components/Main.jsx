@@ -35,9 +35,7 @@ export default function Main() {
                 <Text style={styles.title}>Login</Text>
                 <Text style={{ marginBottom: 9 }}>Usuario</Text>
                 {/*
-                We veras hubo un problema para corregir el error q no vi antes te hice colaborador y al parecer no se te quiere quitar osea tienes todos los permisos de la app :V
-                XD
-                pero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxaero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxassero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxassero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxassero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxassero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxassero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxassero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxassero basicamente eso simplemente haces push origin 0.2v has a tu página y le das acreate pull request y leasdasdxasssseda das a 
+                Yap veras facil tu modificas algo lo guardas con Control + S
                 */ }
                 <TextInput
                     style={styles.input}
