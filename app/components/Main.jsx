@@ -75,7 +75,7 @@ export default function Main() {
                     )}
                 </Pressable>
                 <Text style={{ alignSelf: 'center' }}>Or</Text>
-                <Link href="/about">
+                <Link href="/home">
                     <Text>Modo invitado</Text>
                 </Link>
                 <View style={{ flexDirection: "row", justifyContent: "space-around" }}>

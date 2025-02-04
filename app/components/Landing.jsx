@@ -33,12 +33,11 @@ function Landing () {
                 </View>
             </ScrollView>
             <View style={{ backgroundColor: 'rgba(132, 0, 255, 0.99)', paddingHorizontal: 6, padding: 6, borderRadius: 6, position: 'absolute', bottom: 16, right: 26 }}>
-                <Link href="#">
+                <Link asChild href="/sectionh">
                     <Pressable>
                         <Text>HOLA XD</Text>
                         <Upload />
                     </Pressable>
-                {/*Cuando acabes de modificar algo ya sea lo guardes osea Control + S te aparece ahí que has hecho un cambio y en donde tambien te aparece y ahí donde dice mensaje describes muy resumido que modificaste y le das a la flechita y hacer commit e insertar*/ }
                 </Link>
             </View>
         </View>
