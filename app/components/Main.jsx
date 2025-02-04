@@ -33,7 +33,12 @@ export default function Main() {
             />
             <View style={styles.containerform}>
                 <Text style={styles.title}>Login</Text>
-                <Text style={{ marginBottom: 9 }}>Username</Text>
+                <Text style={{ marginBottom: 9 }}>Usuario</Text>
+                {/*Una vez acabes vas a abrir esto se llama git bash puedes abrirlo desde la carpeta para subir los cambios tienes 2 opciones subir literalmente todo que es con
+                git add . eso sube todo y otra es especificacndo el archivo
+                git add Main.jsx y subira los cambios de ese archivo una vez ya hagas eso
+                haces
+                */ }
                 <TextInput
                     style={styles.input}
                     placeholder="Email"
@@ -42,7 +47,7 @@ export default function Main() {
                     keyboardType="email-address"
                     autoCapitalize="none"
                 />
-                <Text style={{ marginBottom: 9 }}>Password</Text>
+                <Text style={{ marginBottom: 9 }}>Contraseña</Text>
                 <TextInput
                     style={styles.input}
                     placeholder="Password"
