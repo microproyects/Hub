@@ -34,8 +34,8 @@ export default function Main() {
             <View style={styles.containerform}>
                 <Text style={styles.title}>Login</Text>
                 <Text style={{ marginBottom: 9 }}>Usuario</Text>
-                {/*
-                asdasdasdasdasxdasxdasxdasdxasdxadxasdxasdxasdx*/ }
+                {/*xd
+                */ }
                 <TextInput
                     style={styles.input}
                     placeholder="Email"
