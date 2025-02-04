@@ -32,8 +32,9 @@ export default function Main() {
                 }}
             />
             <View style={styles.containerform}>
-                <Text style={styles.title}>Login FORM</Text>
-                <Text style={{ marginBottom: 9 }}>Usuario</Text>
+                <Text style={styles.title}>Login</Text>
+                <Text style={{ marginBottom: 12 }}>Usuario</Text>
+                
                 <TextInput
                     style={styles.input}
                     placeholder="Email"
