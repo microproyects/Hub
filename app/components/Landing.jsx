@@ -38,6 +38,10 @@ function Landing () {
                         <Text>HOLA XD</Text>
                         <Upload />
                     </Pressable>
+                    <Pressable>
+                        <Text>HOLA XD22222</Text>
+                        <Upload />
+                    </Pressable>
                 </Link>
             </View>
         </View>
@@ -48,7 +52,7 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30,
         margin: 8,
-        padding: 3,
+        padding: 4,
         borderRadius: 50,
     },
 
