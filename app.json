@@ -32,7 +32,10 @@
       "eas": {
         "projectId": "d2bc8bf5-71d9-45e5-9682-0977b91f365a"
       }
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   },
   "web": {
     "favicon": "./assets/favicon.png"

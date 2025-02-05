@@ -14,7 +14,7 @@ function Landing () {
         setAsideVisible(prevState => !prevState);
     };
     return (
-        <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
+        <View style={{backgroundColor:'#8A7AE7', paddingTop: insets.top, paddingBottom: insets.bottom }}>
             <ScrollView>
                 <View>
                     <Pressable onPress={toggleAside}>
