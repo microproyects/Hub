@@ -13,8 +13,7 @@
     "@eslint/config-array": "^0.19.2",
     "@eslint/object-schema": "^2.1.6",
     "@expo/vector-icons": "^14.0.4",
-    "@tabler/icons-react-native": "^3.29.0",
-    "expo": "~52.0.28",
+    "expo": "^52.0.30",
     "expo-constants": "~17.0.5",
     "expo-linking": "~7.0.5",
     "expo-router": "~4.0.17",
@@ -35,5 +34,13 @@
     "globals": "^15.14.0",
     "prettier": "^3.4.2"
   },
+  "expo": {
+  "doctor": {
+    "reactNativeDirectoryCheck": {
+      "listUnknownPackages": false
+    }
+  }
+},
+
   "private": true
 }
