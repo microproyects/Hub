@@ -18,7 +18,7 @@ export default function Main() {
     return (
         <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
             <View style={styles.centerContent}>
-            <Image source={require('../../assets/section2.png')} style={{alignSelf: 'center', width: 200, height: 200 }} />
+            <Image source={require('../assets/section2.png')} style={{alignSelf: 'center', width: 200, height: 200 }} />
                 <Pressable
                     style={({ pressed }) => [
                         styles.containerJoin,
@@ -28,7 +28,7 @@ export default function Main() {
                 >
                     <Text style={styles.title}>Unirse a Sala Privada</Text>
                 </Pressable>
-                <Image source={require('../../assets/section.png')} style={{alignSelf: 'center' ,width: 200, height: 200 }} />
+                <Image source={require('../assets/section.png')} style={{alignSelf: 'center' ,width: 200, height: 200 }} />
                 <Pressable
                     style={({ pressed }) => [
                         styles.containerCreate,
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     emptySpace: {
-        height: 100,
+        height: 207,
     },
     pressed: {
         opacity: OPACITY_PRESSED,

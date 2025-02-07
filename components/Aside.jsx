@@ -7,7 +7,7 @@ export default function Aside() {
         <View style={styles.aside}>
             <View style={styles.profiles}>
                 <Image
-                    source={require("../../assets/profile.png")}
+                    source={require("../assets/profile.png")}
                     style={styles.profileImage}
                 />
                 <View>

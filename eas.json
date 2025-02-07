@@ -16,7 +16,8 @@
       "android": {
         "buildType": "apk",
         "gradleCommand": ":app:assembleRelease",
-        "applicationArchivePath": "android/app/build/outputs/apk/release/app-release.apk"
+        "applicationArchivePath": "android/app/build/outputs/apk/release/app-release.apk",
+        "proguard": true
       }
     }
   },
