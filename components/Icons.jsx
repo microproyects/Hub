@@ -15,7 +15,7 @@ export const Left = () => (
     <Entypo name="align-left" size={18} color="grey" />
 )
 export const Upload = () => (
-<Entypo name="chevron-with-circle-up" size={60} color="white" />
+<Entypo name="chevron-with-circle-up" size={60} color="black" />
 )
 export const List = () =>(
     <Entypo name="list" size={40} color="white" />

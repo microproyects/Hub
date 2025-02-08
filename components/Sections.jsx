@@ -6,14 +6,14 @@ import {
     Pressable,
     Image,
 } from "react-native";
-import { useRouter } from "expo-router"; // Asegúrate de importar useRouter
+import { useRouter } from "expo-router"; 
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const OPACITY_PRESSED = 0.5;
 
 export default function Main() {
     const insets = useSafeAreaInsets();
-    const router = useRouter(); // Inicializa el router
+    const router = useRouter(); 
 
     return (
         <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
@@ -24,7 +24,7 @@ export default function Main() {
                         styles.containerJoin,
                         pressed ? styles.pressed : null
                     ]}
-                    onPress={() => router.push('/home')} 
+                    onPress={() => router.push('/Home/home')} 
                 >
                     <Text style={styles.title}>Unirse a Sala Privada</Text>
                 </Pressable>
@@ -34,7 +34,7 @@ export default function Main() {
                         styles.containerCreate,
                         pressed ? styles.pressed : null
                     ]}
-                    onPress={() => router.push('/home')}
+                    onPress={() => router.push('../../page/create')}
                 >
                     <Text style={styles.title}>Crear Sala Privada</Text>
                 </Pressable>
@@ -47,8 +47,9 @@ export default function Main() {
 
 const styles = StyleSheet.create({
     centerContent: {
-        paddingHorizontal: 16,
-        backgroundColor: "#8A7AE7",
+        paddingHorizontal: 30,
+        paddingVertical: 30,
+        backgroundColor: "#1F1C1F",
     },
     containerJoin: {
         backgroundColor: "#fff",
