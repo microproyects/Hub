@@ -1,124 +1,131 @@
-import { Link } from 'expo-router';
+
 import React from 'react';
-import { useRouter } from "expo-router"; 
+// import { useRouter } from "expo-router";
 import { View, Pressable, Text, StyleSheet, ScrollView, Dimensions } from 'react-native';
-const { width, height } = Dimensions.get('window');
-export default function Works ()  {
-    const router = useRouter();
+const { width } = Dimensions.get('window');
+import PropTypes from 'prop-types';
+export default function Works() {
+    //const router = useRouter();
+    const materiasTecnicas = [
+        { title: 'Programación', action: () => alert('Programación') },
+        { title: 'Soporte Técnico', action: () => alert('Soporte Técnico') },
+        { title: 'Sistemas Operativos', action: () => alert('Sistemas Operativos') },
+        { title: 'Diseño Web', action: () => alert('Diseño Web') },
+        { title: 'Ofimatica', action: () => alert('Ofimatica') },
+        { title: 'FOL', action: () => alert('FOL') },
+    ];
+    const Divider = ({ title }) => ( //title is missing in props validation solucionado con IA XDXD
+        <View style={styles.dividerContainer}>
+            <View style={styles.dividerLine} />
+            <Text style={styles.dividerText}>{title}</Text>
+            <View style={styles.dividerLine} />
+        </View>
+    );
+    Divider.propTypes = {
+        title: PropTypes.string.isRequired,
+    };
+    const materiasPrimarias = [
+        { title: 'Matematica', action: () => alert('Matematica')},
+        { title: 'Lengua', action: () => alert('Lengua')},
+        { title: 'Historia', action: () => alert('Historia') },
+
+        { title: 'Ingles', action: () => alert('Ingles') },
+        { title: 'Quimica', action: () => alert('Quimica') },
+        { title: 'Educa', action: () => alert('Educa') },
+    ];
     return (
         <View style={styles.all}>
             <ScrollView>
+                <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+                    <View style={{ backgroundColor: '#2B282B', height: 100, width: 170, padding: 15, flexDirection: 'row', borderRadius: 15, }}>
+                        <View style={{ height: '100%', width: 3, backgroundColor: 'green', borderRadius: 2, }}>
 
-                    <View style={styles.container}>
-                        <Pressable >
-                            <Text style={styles.text}>Matematica</Text>
-                        </Pressable>
+                        </View>
+                        <View style={{ padding: 3 }}><Text style={{ color: 'white', fontSize: 15, padding: 5 }}>Tareas Completadas: 10</Text></View>
+
                     </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => router.push(`/id`)}>
-                                <Text style={styles.text}>Lengua</Text>
+                    <View style={{ backgroundColor: '#2B282B', height: 100, width: 170, flexDirection: 'row', padding: 15, borderRadius: 15, }}>
+                        <View style={{ height: '100%', width: 3, backgroundColor: 'red', borderRadius: 2, }}>
+
+                        </View>
+                        <View style={{ padding: 9 }}><Text style={{ color: 'white', fontSize: 15, padding: 5 }}>Tareas Faltantes: 5</Text></View>
+
+                    </View>
+                </View>
+                <Divider title="Materias Técnicas" />
+                <View style={styles.gridContainer}>
+                    {materiasTecnicas.map((item, index) =>
+                        <View key={index} style={styles.gridItem}>
+                            <Pressable onPress={item.action}>
+                                <Text style={styles.text}>{item.title}</Text>
                             </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Programación')}>
-                                <Text style={styles.text}>Programación</Text>
+                        </View>
+                    )}
+                </View>
+
+                <Divider title="Materias Primarias" />
+                <View style={styles.gridContainer}>
+                    {materiasPrimarias.map((item, index) =>
+                        <View key={index} style={styles.gridItem}>
+                            <Pressable onPress={item.action}>
+                                <Text style={styles.text}>{item.title}</Text>
                             </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Soporte Ténico')}>
-                                <Text style={styles.text}>Soporte Ténico</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Ofimatica')}>
-                                <Text style={styles.text}>Ofimatica</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Historia')}>
-                                <Text style={styles.text}>Historia</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Sistemas Operativos')}>
-                                <Text style={styles.text}>Sistemas Operativos</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Diseño Web')}>
-                                <Text style={styles.text}>Diseño Web</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('FOL')}>
-                                <Text style={styles.text}>FOL</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Ingles')}>
-                                <Text style={styles.text}>Ingles</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Quimica')}>
-                                <Text style={styles.text}>Quimica</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
-                    <View style={styles.container}>
-                        <Link asChild href="#">
-                            <Pressable onPress={() => alert('Educa')}>
-                                <Text style={styles.text}>Educa</Text>
-                            </Pressable>
-                        </Link>
-                    </View>
+                        </View>
+                    )}
+                </View>
+                <View style={{ height: 70 }}></View>
             </ScrollView>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
+
     all: {
         flexDirection: 'column',
         justifyContent: 'space-between',
         padding: 12,
-        backgroundColor: '#8A7AE7'
+        backgroundColor: '#1F1C1F'
     },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        width: width - 50,
-        height: height / 10,
+    gridContainer: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: 'rgba(255, 255, 255, 0.61)',
-        margin: 10,
-        borderRadius: 12,
+    },
+    gridItem: {
+        width: (width - 30) / 2,
+        height: 50,
+        backgroundColor: 'rgb(33, 51, 85)',
+        borderRadius: 15,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 15,
     },
     text: {
-        fontSize: 20,
-        color: '#000',
+        fontSize: 15,
+        color: '#fff',
         textAlign: 'center',
         margin: 10,
         fontFamily: 'sans-serif',
+        paddingHorizontal: 10,
+    },
+    dividerContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginVertical: 20,
+        paddingHorizontal: 10,
+    },
+    dividerLine: {
+        flex: 1,
+        height: 1,
+        backgroundColor: 'rgb(191, 0, 255)',
+    },
+    dividerText: {
+        color: 'rgba(254, 0, 233, 0.96)',
+        paddingHorizontal: 10,
+        fontSize: 16,
+        fontWeight: 'bold',
     },
 });
 
