@@ -1,4 +1,4 @@
-import { Link } from "expo-router";
+import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import {
     View,
@@ -14,7 +14,7 @@ export default function Main() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const insets = useSafeAreaInsets();
-
+        const router = useRouter(); 
     const handleLogin = () => {
         console.log("Email:", email);
         console.log("Password:", password);
@@ -23,7 +23,7 @@ export default function Main() {
     return (
         <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
 
-            <View style={{ backgroundColor: '#8A7AE7' }}>
+            <View style={{ backgroundColor: '#262626' }}>
                 <ScrollView>
                     <Image
                         source={require("../assets/login2.png")}
@@ -36,7 +36,7 @@ export default function Main() {
                         }}
                     />
                     <View style={styles.containerform}>
-                        <Text style={styles.title}>Login FORM</Text>
+                        <Text style={styles.title}>Login</Text>
                         <Text style={{ marginBottom: 9 }}>Usuario</Text>
                         <TextInput
                             style={styles.input}
@@ -79,9 +79,16 @@ export default function Main() {
                             )}
                         </Pressable>
                         <Text style={{ alignSelf: 'center' }}>Or</Text>
-                        <Link href="/Home/sectionh">
-                            <Text>Modo invitado</Text>
-                        </Link>
+                            <Pressable 
+                                style={({pressed}) =>[
+                                    {
+                                        backgroundColor: pressed ? 'grey' : '#FBC21D',
+                                    },
+                                    styles.Pressable,
+                                ]}onPress={() => router.push('/Home/sectionh')}>
+                            
+                                <Text>Modo invitado</Text>
+                            </Pressable>
                         <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
                             <Image
                                 source={require("../assets/google.png")}
@@ -92,10 +99,10 @@ export default function Main() {
                                 source={require("../assets/face.png")}
                             />
                         </View>
-                
+
+                    </View>
+                </ScrollView>
             </View>
-            </ScrollView>
-        </View>
         </View >
     );
 }
@@ -114,7 +121,7 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     containerform: {
-        backgroundColor: "rgb(234, 230, 248)",
+        backgroundColor: "rgb(255, 255, 255)",
         width: "100%",
         margin: "auto",
         height: "100%",
