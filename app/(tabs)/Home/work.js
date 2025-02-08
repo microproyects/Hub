@@ -45,9 +45,9 @@ export default function Work() {
         });
 
         if (!result.canceled) {
-            // Guardamos todas las URIs de las imágenes seleccionadas
+            // Guarda todas las URIs de las imágenes seleccionadas
             const newImages = result.assets.map(asset => asset.uri);
-            setImage(newImages);
+            setImage(newImages);    
         }
     };
     return (
@@ -62,45 +62,42 @@ export default function Work() {
                 setValue={setValue}
                 setItems={setItems}
 
-                // Placeholder
                 placeholder="Selecciona la materia!"
 
-                // Estilos
                 containerStyle={{ width: 280 }}
                 style={{
-                    backgroundColor: 'rgb(52, 52, 52)', // Fondo oscuro
-                    borderColor: 'rgb(180, 7, 7)', // Borde verde
+                    backgroundColor: 'rgb(52, 52, 52)', 
+                    borderColor: 'rgb(180, 7, 7)', 
                     borderWidth: 2,
                     borderRadius: 10,
                 }}
                 dropDownContainerStyle={{
-                    backgroundColor: '#2a2a2a', // Fondo de las opciones
+                    backgroundColor: '#2a2a2a', 
                     borderColor: 'rgb(180, 7, 7)',
                     borderWidth: 1,
                 }}
                 textStyle={{
-                    color: 'white', // Color del texto
+                    color: 'white',
                     fontSize: 17,
                 }}
                 selectedItemContainerStyle={{
-                    backgroundColor: 'rgba(180, 7, 7, 0.54)', // Color de fondo de las opciones seleccionadas
+                    backgroundColor: 'rgba(180, 7, 7, 0.54)',
                 }}
-                // Estilos para la flecha
+
                 arrowIconStyle={{
-                    tintColor: 'rgb(255, 255, 255)'  // Color de la flecha
+                    tintColor: 'rgb(255, 255, 255)' 
                 }}
                 tickIconStyle={{
-                    tintColor: 'white'  // Color del tick
+                    tintColor: 'white'  
                 }}
 
                 selectedItemLabelStyle={{
-                    fontWeight: 'bold', // Negrita para los seleccionados
+                    fontWeight: 'bold',
                     color: 'white',
                 }}
-                listMode="SCROLLVIEW" // Se puede cambiar a MODAL o FLATLIST
+                listMode="SCROLLVIEW" 
             />
 
-            {/* Mostrar materias seleccionadas */}
             <Text style={{ color: 'white', marginTop: 20 }}>
                 Materia elegida: {value}
             </Text>
